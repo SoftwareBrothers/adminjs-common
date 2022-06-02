@@ -22,7 +22,6 @@ export declare type FlatModuleType = {
 /**
  * @module flat
  * @name flat
- * @new in version 3.3
  * @load ./flat.doc.md
  */
 export declare const flat: FlatModuleType;

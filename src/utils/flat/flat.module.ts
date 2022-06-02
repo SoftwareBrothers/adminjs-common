@@ -25,7 +25,6 @@ export type FlatModuleType = {
 /**
  * @module flat
  * @name flat
- * @new in version 3.3
  * @load ./flat.doc.md
  */
 export const flat: FlatModuleType = {
