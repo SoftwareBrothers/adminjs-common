@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir": ".",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "jsx": "react",
+    "declaration": true,
+    "declarationDir": ".",
+    "emitDeclarationOnly": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noImplicitThis": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "types": ["node", "mocha"],
+    "skipLibCheck": true
+  },
+  "include": [
+    "./src/**/*",
+    "./spec/**/*"
+  ],
+  "exclude": [
+    "./node-modules",
+  ]
+}
