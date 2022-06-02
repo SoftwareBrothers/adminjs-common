@@ -1,5 +1,6 @@
 import { unflatten } from 'flat'
-import { DELIMITER } from './constants'
+
+import { DELIMITER } from '../constants'
 import { selectParams } from './select-params'
 import { FlattenParams } from '../flat'
 import { propertyKeyRegex } from './property-key-regex'
@@ -25,7 +26,7 @@ const get = (params: FlattenParams = {}, propertyPath?: string, options?: GetOpt
   // when object has this key - simply return it
   // we cannot rely on typeof params[propertyPath !== 'undefined' because params can actually be
   // undefined and in such case if would pass and function would return [undefined]
-  if (Object.keys(params).find(key => (key === propertyPath))) {
+  if (Object.keys(params).find((key) => (key === propertyPath))) {
     return params[propertyPath]
   }
 
@@ -62,7 +63,7 @@ const get = (params: FlattenParams = {}, propertyPath?: string, options?: GetOpt
   }, {} as FlattenParams)
 
   if (Object.keys(nestedProperties).length) {
-    return (unflatten(nestedProperties) as {})[TEMP_HOLDING_KEY]
+    return (unflatten(nestedProperties) as Record<string, any>)[TEMP_HOLDING_KEY]
   }
   return undefined
 }

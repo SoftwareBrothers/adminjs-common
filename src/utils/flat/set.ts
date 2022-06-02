@@ -1,6 +1,6 @@
 import { flatten } from 'flat'
 
-import { DELIMITER } from './constants'
+import { DELIMITER } from '../constants'
 import { FlattenParams } from '../flat'
 import { propertyKeyRegex } from './property-key-regex'
 import { pathToParts } from './path-to-parts'

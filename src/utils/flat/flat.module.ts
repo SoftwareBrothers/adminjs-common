@@ -1,6 +1,6 @@
 import { flatten, unflatten } from 'flat'
 
-import { DELIMITER } from './constants'
+import { DELIMITER } from '../constants'
 import { selectParams } from './select-params'
 import { filterOutParams } from './filter-out-params'
 import { set } from './set'
