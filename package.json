@@ -9,8 +9,9 @@
     "name": "Rafał Dzięgielewski"
   },
   "scripts": {
-    "build": "rm -rf utils && tsc",
-    "dev": "rm -rf utils",
+    "clean": "rimraf utils constants.js index.js index.d.ts",
+    "build": "yarn clean && tsc",
+    "dev": "yarn clean && tsc -w",
     "test": "mocha ./spec/index.js"
   },
   "dependencies": {
@@ -41,6 +42,7 @@
     "jsdom-global": "^3.0.2",
     "mocha": "^10.0.0",
     "require.all": "^2.0.5",
+    "rimraf": "^3.0.2",
     "sinon": "^14.0.0",
     "sinon-chai": "^3.7.0",
     "typescript": "^4.7.2"

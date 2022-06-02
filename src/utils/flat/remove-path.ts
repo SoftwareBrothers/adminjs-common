@@ -3,7 +3,7 @@ import { FlattenParams } from './flat.types'
 import { get } from './get'
 import { set } from './set'
 import { pathToParts } from './path-to-parts'
-import { DELIMITER } from '../constants'
+import { DELIMITER } from '../../constants'
 
 /**
  * @load ./remove-path.doc.md

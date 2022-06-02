@@ -105,7 +105,8 @@ dist
 
 
 # built files
-./utils/*
-./constants
-./index.d.ts
-./index.js
+utils
+constants.d.ts
+constants.js
+index.d.ts
+index.js

@@ -1,4 +1,4 @@
-import { DELIMITER } from '../constants'
+import { DELIMITER } from '../../constants'
 import { GetOptions } from './flat.types'
 
 // this is the regex used to find all existing properties starting with a key
