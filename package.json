@@ -9,23 +9,27 @@
     "name": "Rafał Dzięgielewski"
   },
   "scripts": {
-    "clean": "rimraf utils constants.js index.js index.d.ts",
+    "clean": "rimraf utils constants interfaces index.js index.d.ts",
     "build": "yarn clean && tsc",
     "dev": "yarn clean && tsc -w",
     "test": "mocha ./spec/index.js"
   },
   "dependencies": {
+    "@adminjs/design-system": "^3.0.0",
     "@babel/core": "^7.18.2",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.18.2",
     "@babel/preset-react": "^7.17.12",
     "@babel/preset-typescript": "^7.17.12",
     "@babel/register": "^7.17.7",
-    "flat": "^4.1.0"
+    "flat": "^4.1.0",
+    "i18next": "^21.8.14",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@types/chai": "^4.3.1",
     "@types/flat": "^0.0.28",
+    "@types/i18next": "^13.0.0",
     "@types/mocha": "^9.1.1",
     "@types/node": "^17.0.38",
     "@typescript-eslint/eslint-plugin": "^5.27.0",

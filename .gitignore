@@ -105,8 +105,10 @@ dist
 
 
 # built files
-utils
-constants.d.ts
-constants.js
-index.d.ts
-index.js
+/interfaces
+/utils
+/constants
+/index.d.ts
+/index.js
+
+.DS_Store
