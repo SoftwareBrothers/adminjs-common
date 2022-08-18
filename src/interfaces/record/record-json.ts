@@ -1,3 +1,4 @@
+import { RecordError } from '../../errors'
 import { ActionJSON } from '../action'
 
 /**
@@ -26,6 +27,7 @@ export interface RecordJSON {
    * List of all validation errors
    */
   errors: Record<string, ErrorMessage>;
+  baseError: RecordError | null; // todo: check types
   /**
    * Uniq Id of a record. Not present if the record is new (in NewAction)
    */

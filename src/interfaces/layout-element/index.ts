@@ -1,4 +1,4 @@
-type PropsWithChildren<T = any> = T & {
+export type PropsWithChildren<T = any> = T & {
   children?: any;
   [key: string]: any;
 }

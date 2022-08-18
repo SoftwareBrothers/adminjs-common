@@ -108,6 +108,7 @@ dist
 /interfaces
 /utils
 /constants
+/errors
 /index.d.ts
 /index.js
 

@@ -9,7 +9,7 @@
     "name": "Rafał Dzięgielewski"
   },
   "scripts": {
-    "clean": "rimraf utils constants interfaces index.js index.d.ts",
+    "clean": "rimraf utils constants interfaces errors index.js index.d.ts",
     "build": "yarn clean && tsc",
     "dev": "yarn clean && tsc -w",
     "test": "mocha ./spec/index.js"
@@ -23,7 +23,7 @@
     "@babel/preset-typescript": "^7.17.12",
     "@babel/register": "^7.17.7",
     "flat": "^4.1.0",
-    "i18next": "^21.8.14",
+    "i18next": "^21.9.1",
     "lodash": "^4.17.21"
   },
   "devDependencies": {

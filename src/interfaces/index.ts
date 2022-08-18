@@ -1,4 +1,5 @@
 export * from './action'
+export * from './adminjs-options'
 export * from './current-admin'
 export * from './locale'
 export * from './page'
