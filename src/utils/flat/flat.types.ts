@@ -8,7 +8,8 @@ export type FlattenParams = {
   [key: string]: FlattenValue;
 }
 
-export type FlattenValue = string | boolean | number | Date | null | [] | Record<string, any> | File
+// eslint-disable-next-line max-len
+export type FlattenValue = string | boolean | number | Date | null | Array<unknown> | Record<string, unknown> | File
 
 /**
  * @memberof module:flat

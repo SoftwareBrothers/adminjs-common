@@ -1,6 +1,5 @@
 import { flatten, unflatten } from 'flat'
 
-import { DELIMITER } from '../../constants'
 import { selectParams } from './select-params'
 import { filterOutParams } from './filter-out-params'
 import { set } from './set'
@@ -16,7 +15,6 @@ export type FlatModuleType = {
   get: typeof get;
   selectParams: typeof selectParams;
   filterOutParams: typeof filterOutParams;
-  DELIMITER: typeof DELIMITER;
   pathToParts: typeof pathToParts;
   removePath: typeof removePath;
   merge: typeof merge;
@@ -44,7 +42,6 @@ export const flat: FlatModuleType = {
   selectParams,
   filterOutParams,
   removePath,
-  DELIMITER,
   pathToParts,
   merge,
 }

@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "outDir": ".",
+    "outDir": "./lib",
     "target": "ES2015",
     "module": "commonjs",
     "esModuleInterop": true,
     "jsx": "react",
     "declaration": true,
-    "declarationDir": ".",
+    "declarationDir": "./types",
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "strictFunctionTypes": true,

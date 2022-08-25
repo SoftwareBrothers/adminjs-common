@@ -103,13 +103,8 @@ dist
 # TernJS port file
 .tern-port
 
-
 # built files
-/interfaces
-/utils
-/constants
-/errors
-/index.d.ts
-/index.js
+/lib
+/types
 
 .DS_Store
