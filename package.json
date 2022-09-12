@@ -29,7 +29,6 @@
     "test": "mocha ./spec/index.js"
   },
   "dependencies": {
-    "@adminjs/design-system": "^3.0.0",
     "@babel/core": "^7.18.2",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.18.2",
@@ -41,6 +40,7 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "@adminjs/design-system": "^3.0.0",
     "@types/chai": "^4.3.1",
     "@types/flat": "^0.0.28",
     "@types/i18next": "^13.0.0",

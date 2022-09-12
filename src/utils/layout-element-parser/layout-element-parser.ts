@@ -1,4 +1,6 @@
 /* eslint-disable max-len */
+// Note: @adminjs/design-system is only needed for types
+// eslint-disable-next-line import/no-extraneous-dependencies
 import {
   BoxProps,
   HeaderProps,

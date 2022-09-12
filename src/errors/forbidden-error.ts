@@ -16,12 +16,18 @@ export class ForbiddenError extends Error {
   public baseMessage?: string
 
   /**
+   * Additional data passed to error
+   */
+  public data?: Record<string, unknown>
+
+  /**
    * @param {string} [message]
    */
-  constructor(message?: string) {
+  constructor(message?: string, data?: Record<string, unknown>) {
     super('You cannot perform this action')
     this.statusCode = 403
     this.baseMessage = message
+    this.data = data
     this.name = 'ForbiddenError'
   }
 }

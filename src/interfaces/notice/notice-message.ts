@@ -5,5 +5,7 @@
  */
 export type NoticeMessage = {
   message: string;
+  resourceId?: string;
+  payload?: Record<string, unknown>;
   type?: 'success' | 'error';
 }
