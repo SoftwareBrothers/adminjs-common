@@ -19,10 +19,6 @@ export interface ActionJSON {
    */
   icon?: string;
   /**
-   * Action label - visible on the frontend
-   */
-  label: string;
-  /**
    * Guarding message which should be presented in `alert()` after clicking the action button
    */
   guard?: string;
