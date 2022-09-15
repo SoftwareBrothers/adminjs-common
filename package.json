@@ -52,6 +52,7 @@
   },
   "devDependencies": {
     "@adminjs/design-system": "^3.0.0",
+    "@semantic-release/git": "^10.0.1",
     "@types/chai": "^4.3.1",
     "@types/flat": "^0.0.28",
     "@types/mocha": "^9.1.1",
