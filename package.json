@@ -10,11 +10,21 @@
   },
   "typesVersions": {
     "*": {
-      ".": ["types/index.d.ts"],
-      "constants": ["types/constants/index.d.ts"],
-      "errors": ["types/errors/index.d.ts"],
-      "interfaces": ["types/interfaces/index.d.ts"],
-      "utils": ["types/utils/index.d.ts"]
+      ".": [
+        "types/index.d.ts"
+      ],
+      "constants": [
+        "types/constants/index.d.ts"
+      ],
+      "errors": [
+        "types/errors/index.d.ts"
+      ],
+      "interfaces": [
+        "types/interfaces/index.d.ts"
+      ],
+      "utils": [
+        "types/utils/index.d.ts"
+      ]
     }
   },
   "license": "MIT",
@@ -26,7 +36,8 @@
     "clean": "rimraf lib types",
     "build": "yarn clean && tsc",
     "dev": "yarn clean && tsc -w",
-    "test": "mocha ./spec/index.js"
+    "test": "mocha ./spec/index.js",
+    "release": "semantic-release"
   },
   "dependencies": {
     "@babel/core": "^7.18.2",
@@ -61,6 +72,7 @@
     "mocha": "^10.0.0",
     "require.all": "^2.0.5",
     "rimraf": "^3.0.2",
+    "semantic-release": "^19.0.5",
     "sinon": "^14.0.0",
     "sinon-chai": "^3.7.0",
     "typescript": "^4.7.2"
