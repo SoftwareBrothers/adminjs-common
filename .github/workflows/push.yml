@@ -51,6 +51,8 @@ jobs:
         run: yarn lint
       - name: Build
         run: yarn build
+      - name: List files
+        run: ls
 
   publish:
     name: Publish
@@ -75,8 +77,6 @@ jobs:
         run: yarn install
       - name: Build
         run: yarn build
-      - name: List files
-        run: ls
       - name: Release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
