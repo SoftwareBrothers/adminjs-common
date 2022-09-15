@@ -34,7 +34,7 @@
   },
   "scripts": {
     "clean": "rimraf lib types",
-    "build": "yarn clean && tsc",
+    "build": "tsc",
     "lint": "npx eslint",
     "dev": "yarn clean && tsc -w",
     "test": "mocha ./spec/index.js",
