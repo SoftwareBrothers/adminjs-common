@@ -43,6 +43,10 @@ export interface PropertyJSON {
    */
   path: string;
   /**
+   * Property label
+   */
+  label: string;
+  /**
    * Description of field. Shown as hoverable hint after label.
    */
   description?: string;
