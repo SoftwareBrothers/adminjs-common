@@ -1,6 +1,6 @@
 {
   "name": "@adminjs/common",
-  "version": "1.0.0-dev.3",
+  "version": "1.0.0-dev.4",
   "exports": {
     ".": "./lib/index.js",
     "./constants": "./lib/constants/index.js",
