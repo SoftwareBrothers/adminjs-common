@@ -43,10 +43,6 @@ export interface PropertyJSON {
    */
   path: string;
   /**
-   * Description of field. Shown as hoverable hint after label.
-   */
-  description?: string;
-  /**
    * One of {@link PropertyType}s
    */
   type: PropertyType;
@@ -60,60 +56,22 @@ export interface PropertyJSON {
    */
   isArray: boolean;
   /**
-   * Indicates if array elements should be draggable when editing.
-   * It is only usable if the property is an array.
-   */
-  isDraggable: boolean;
-  /**
    * Contain list of all sub properties.
    * This is the case for nested schemas in MongoDB.
    */
   subProperties: Array<BasePropertyJSON>;
   /**
-   * All component names overridden by the user in PropertyOptions
-   */
-  components?: {
-    show?: string;
-    edit?: string;
-    filter?: string;
-    list?: string;
-  };
-
-  /**
-   * Custom parameters passed from the {@link PropertyOptions.custom}.
-   */
-  custom: {
-    [key: string]: any;
-  };
-
-  /**
-   * Additional props passed to the actual react component
-   * @new in version 3.3
-   */
-  props: {
-    [key: string]: any;
-  };
-
-  /**
    * Whether the field should be disabled in edition
    */
   isDisabled: boolean;
-
   /**
    * Whether the field should be marked as required (with a star)
    */
   isRequired: boolean;
-
-  /**
-   * if label above the input should be hidden
-   */
-  hideLabel: boolean;
-
   /**
    * Resource to which given property belongs
    */
   resourceId: string;
-
   /**
    * Indicates if given property has been created in AdminJS {@link PropertyOptions} and hasn't
    * been returned by the database adapter.

@@ -41,17 +41,18 @@
     "release": "semantic-release"
   },
   "dependencies": {
-    "@babel/core": "^7.18.2",
-    "@babel/polyfill": "^7.12.1",
-    "@babel/preset-env": "^7.18.2",
-    "@babel/preset-react": "^7.17.12",
-    "@babel/preset-typescript": "^7.17.12",
-    "@babel/register": "^7.17.7",
     "flat": "^4.1.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@adminjs/design-system": "^3.0.0",
+    "@babel/core": "^7.18.2",
+    "@babel/helper-string-parser": "^7.18.10",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/preset-typescript": "^7.17.12",
+    "@babel/register": "^7.17.7",
     "@semantic-release/git": "^10.0.1",
     "@types/chai": "^4.3.1",
     "@types/flat": "^0.0.28",
