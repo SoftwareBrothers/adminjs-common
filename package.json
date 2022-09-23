@@ -1,0 +1,81 @@
+{
+  "name": "@adminjs/common",
+  "version": "1.0.0-dev.2",
+  "exports": {
+    ".": "./lib/index.js",
+    "./constants": "./lib/constants/index.js",
+    "./errors": "./lib/errors/index.js",
+    "./interfaces": "./lib/interfaces/index.js",
+    "./utils": "./lib/utils/index.js"
+  },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "types/index.d.ts"
+      ],
+      "constants": [
+        "types/constants/index.d.ts"
+      ],
+      "errors": [
+        "types/errors/index.d.ts"
+      ],
+      "interfaces": [
+        "types/interfaces/index.d.ts"
+      ],
+      "utils": [
+        "types/utils/index.d.ts"
+      ]
+    }
+  },
+  "license": "MIT",
+  "author": {
+    "email": "rafal.dzieg@gmail.com",
+    "name": "Rafał Dzięgielewski"
+  },
+  "scripts": {
+    "clean": "rimraf lib types",
+    "build": "tsc",
+    "lint": "npx eslint",
+    "dev": "yarn clean && tsc -w",
+    "test": "mocha ./spec/index.js",
+    "release": "semantic-release"
+  },
+  "dependencies": {
+    "flat": "^4.1.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@adminjs/design-system": "^3.0.0",
+    "@babel/core": "^7.18.2",
+    "@babel/helper-string-parser": "^7.18.10",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/preset-typescript": "^7.17.12",
+    "@babel/register": "^7.17.7",
+    "@semantic-release/git": "^10.0.1",
+    "@types/chai": "^4.3.1",
+    "@types/flat": "^0.0.28",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^17.0.38",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "chai": "^4.3.6",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-mocha": "^10.0.5",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "jsdom": "^19.0.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^10.0.0",
+    "require.all": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^19.0.5",
+    "sinon": "^14.0.0",
+    "sinon-chai": "^3.7.0",
+    "typescript": "^4.7.2"
+  }
+}

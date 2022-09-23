@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib",
+    "target": "ES2015",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "jsx": "react",
+    "declaration": true,
+    "declarationDir": "./types",
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noImplicitThis": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "types": ["node", "mocha"],
+    "skipLibCheck": true
+  },
+  "include": [
+    "./src/**/*",
+    "./spec/**/*"
+  ],
+  "exclude": [
+    "./node-modules",
+  ]
+}
