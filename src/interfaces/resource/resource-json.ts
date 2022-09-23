@@ -16,28 +16,6 @@ export interface ResourceJSON {
    */
   name: string;
   /**
-   * url to a resource list action. If null - resource should not be seen in the sidebar.
-   */
-  href: string | null;
-  /**
-   * Resource parent - visible on the sidebar
-   */
-  navigation: {
-    /**
-     * Parent name
-     */
-    name: string | null;
-    /**
-     * Parent icon
-     */
-    icon: string;
-    /**
-     * Visibility
-     */
-    show: boolean;
-  } | null;
-
-  /**
    * Property which should be treated as a Main property
    */
   titleProperty: BasePropertyJSON;
